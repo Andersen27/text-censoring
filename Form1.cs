@@ -16,8 +16,6 @@ namespace TextCensoring {
         
         public FileCensoring()
         {
-            fileText = File.ReadAllText(cities, Encoding.GetEncoding(1251));
-            File.WriteAllText(cities, fileText.ToLower());
             InitializeComponent();
         }
 
@@ -41,6 +39,59 @@ namespace TextCensoring {
                 wait_label.Refresh();
 
                 // скрытие конфиденциальных данных
+				string[] words = fileText.Split(new char[] { ' ', '\n' });
+                string censorshipString = File.ReadAllText(names, Encoding.GetEncoding(1251)) + 
+                                          File.ReadAllText(surnames, Encoding.GetEncoding(1251)) + 
+                                          File.ReadAllText(cities, Encoding.GetEncoding(1251));
+                string[] censorship = censorshipString.Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+                char[] specialSymbols = "`~!@\"#№$;%:^?&*()-_=+[]{}'\\|/.,\r".ToCharArray();
+                for (int i = 0; i < words.Length; i++) {
+                    // проверка на присутствие телефона
+                    bool separator = false;
+                    byte numbers = 0;
+                    for (int j = 0; j < words[i].Length; j++) {
+                        if (char.IsDigit(words[i][j])) {
+                            numbers++;
+                            if (numbers > 11)
+                                break;
+                            if (separator) {
+                                separator = false;
+                            }
+                        }
+                        else if (!separator) {
+                            separator = true;
+                        }
+                        else {
+                            break;
+                        }
+                    }
+                    if (numbers == 11) {
+                        if (words[i].EndsWith("\r"))
+                            words[i] = "[censored]\r";
+                        else
+                            words[i] = "[censored]";
+                    }
+                    else {
+                        // проверка на присутствие имени, фамилии или города
+                        for (int j = 0; j < censorship.Length; j++) {
+                            if (words[i].Trim(specialSymbols).ToLower() == censorship[j]) {
+                                if (words[i].EndsWith("\r"))
+                                    words[i] = "[censored]\r";
+                                else
+                                    words[i] = "[censored]";
+                                break;
+                            } 
+                        }
+                    }
+                }
+                fileText = "";
+                for (int i = 0; i < words.Length; i++) {
+                    fileText += words[i];
+                    if (words[i].EndsWith("\r"))
+                        fileText += "\n";
+                    else
+                        fileText += " ";
+                }
                 // конец скрытия конфиденциальных данных
 
                 newFileName = openFileDialog.FileName.Insert(openFileDialog.FileName.Length - 4, "_censored");
