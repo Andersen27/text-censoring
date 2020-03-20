@@ -1,5 +1,4 @@
 language: csharp
-os: windows
 mono: none
 dotnet: 5.0.1
 script:
