@@ -1,5 +1,5 @@
 language: csharp
 mono: none
-dotnet: 5.0.1
+dotnet: 2.0.3
 script:
- - dotnet restore
+ - dotnet restore -p:RestoreUseSkipNonexistentTargets=false -nowarn:msb3202,nu1503
