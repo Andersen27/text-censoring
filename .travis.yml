@@ -2,4 +2,4 @@ language: csharp
 mono: none
 dotnet: 2.0.3
 script:
- - dotnet restore ~/TextCensoring.csproj
+ - dotnet restore TextCensoring.csproj
