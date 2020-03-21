@@ -6,4 +6,4 @@ addons:
     token:
       secure: ${SONAR_TOKEN}
 script:
- - sonar-scanner -x
+ - sonar-scanner -X
