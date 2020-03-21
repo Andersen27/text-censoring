@@ -4,6 +4,6 @@ dotnet: 2.0.3
 addons:
   sonarcloud:
     token:
-      secure: ${SONAR_TOKEN}
+      secure: ${SonarCloud}
 script:
- - sonar-scanner -X
+ - sonar-scanner
