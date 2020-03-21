@@ -4,7 +4,6 @@ dotnet: 2.0.3
 addons:
   sonarcloud:
     token:
-      secure: ${SonarCloud}
+      secure: ${SONAR_TOKEN}
 script:
- - dotnet restore TextCensoring.csproj
  - sonar-scanner
