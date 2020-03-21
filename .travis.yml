@@ -1,5 +1,6 @@
 addons:
   sonarcloud:
+    organisation: "andersen27"
     token:
       secure: ${SonarCloud}
 script:
