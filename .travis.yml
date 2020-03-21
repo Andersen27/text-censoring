@@ -1,5 +1,10 @@
 language: csharp
 mono: none
 dotnet: 2.0.3
+addons:
+  sonarcloud:
+    token:
+      secure: "2fd07597bfeeb4d96d85feebb4db1ab89e7daea3" # encrypted value of token
 script:
  - dotnet restore TextCensoring.csproj
+ - sonar-scanner
