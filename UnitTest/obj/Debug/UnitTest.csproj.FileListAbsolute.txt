@@ -1,0 +1,17 @@
+C:\Users\Andersen_27\Documents\Visual Studio 2019\Projects\TextCensoring\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Andersen_27\Documents\Visual Studio 2019\Projects\TextCensoring\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Andersen_27\Documents\Visual Studio 2019\Projects\TextCensoring\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Andersen_27\Documents\Visual Studio 2019\Projects\TextCensoring\UnitTest\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\Andersen_27\Documents\Visual Studio 2019\Projects\TextCensoring\UnitTest\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\Andersen_27\Documents\Visual Studio 2019\Projects\TextCensoring\UnitTest\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Andersen_27\Documents\Visual Studio 2019\Projects\TextCensoring\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\Andersen_27\Documents\Visual Studio 2019\Projects\TextCensoring\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\Andersen_27\Documents\Visual Studio 2019\Projects\TextCensoring\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Andersen_27\Documents\Visual Studio 2019\Projects\TextCensoring\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Andersen_27\Documents\Visual Studio 2019\Projects\TextCensoring\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Andersen_27\Documents\Visual Studio 2019\Projects\TextCensoring\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Andersen_27\Documents\Visual Studio 2019\Projects\TextCensoring\UnitTest\obj\Debug\UnitTest.csprojAssemblyReference.cache
+C:\Users\Andersen_27\Documents\Visual Studio 2019\Projects\TextCensoring\UnitTest\obj\Debug\UnitTest.csproj.CoreCompileInputs.cache
+C:\Users\Andersen_27\Documents\Visual Studio 2019\Projects\TextCensoring\UnitTest\obj\Debug\UnitTest.csproj.CopyComplete
+C:\Users\Andersen_27\Documents\Visual Studio 2019\Projects\TextCensoring\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\Andersen_27\Documents\Visual Studio 2019\Projects\TextCensoring\UnitTest\obj\Debug\UnitTest.pdb

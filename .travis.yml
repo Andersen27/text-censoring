@@ -1,6 +1,6 @@
 language: csharp
 mono: none
-dotnet: 2.1.100
+dotnet: 2.1.200
 dist: trusty
 sudo: false
 
@@ -12,14 +12,15 @@ addons:
     packages:
     - dotnet-sharedframework-microsoft.netcore.app-1.1.2
     - dotnet-sdk-2.1
-  #sonarcloud:
-    #organisation: "andersen27"
-    
+
 install:
   - export COVERALLSNET_EXEPATH=/home/travis/build/csMACnz/coveralls.net/Package/Archive/linux/csmacnz.Coveralls
   - dotnet restore ./csmacnz.Coveralls.sln
+#addons:
+  #sonarcloud:
+    #organisation: "andersen27"
   
 script:
-  - dotnet build ./csmacnz.Coveralls.sln -c Release
-  - dotnet test ./src/csmacnz.Coveralls.Tests/csmacnz.Coveralls.Tests.csproj -c Release
+ #- dotnet build ./csmacnz.Coveralls.sln -c Release
+  - dotnet test ./UnitTest/UnitTest.csproj -c Release
  #- sonar-scanner
