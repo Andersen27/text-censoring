@@ -18,6 +18,6 @@ install:
   - dotnet restore ./csmacnz.Coveralls.sln
   
 script:
-    - dotnet build ./csmacnz.Coveralls.sln -c Release
+  - dotnet build ./csmacnz.Coveralls.sln -c Release
   - dotnet test ./src/csmacnz.Coveralls.Tests/csmacnz.Coveralls.Tests.csproj -c Release
  #- sonar-scanner
